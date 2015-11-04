@@ -21,7 +21,7 @@ all users
         
         cd /home/mjirik/miniconda/conda-bld
         conda convert /linux-64/io3d-1.0.23-py27_0.tar.bz2 -p all
-        conda upload */linux-64/io3d-1.0.23-py27_0.tar.bz2
+        binstar upload */linux-64/io3d-1.0.23-py27_0.tar.bz2
 
 
 ## after
