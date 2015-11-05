@@ -29,3 +29,10 @@ all users
         
         conda convert ~/miniconda/conda-bld/osx-64/cookiecutter-0.9.1_BUILDNUM.tar.bz2 -p all
         conda upload 
+
+## pysegbase
+
+        conda build .
+        conda convert -p all /home/mjirik/miniconda/conda-bld/linux-64/pysegbase*.bz2
+        binstar upload */pysegbase*.bz2
+        
