@@ -1,0 +1,67 @@
+package:
+  name: pyqtconfig
+  version: "0.8.7"
+
+source:
+  git_rev: ae5b0115fcce9378f398ac6d97099a35711d6d34
+  git_url: https://github.com/mjirik/pyqtconfig.git
+
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pysegbase = pysegbase:main
+    #
+    # Would create an entry point called pysegbase that calls pysegbase.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - scipy
+    - pyqt
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - pyqt
+
+test:
+  # Python imports
+  imports:
+    - pyqtconfig
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/mjirik/pyqtconfig
+  license: BSD License
+  summary: 'A PyQt config manager. Keep Qt widgets in sync with an config dictionary and/or QSettings object'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
